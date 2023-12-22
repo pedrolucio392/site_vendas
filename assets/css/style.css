@@ -1,0 +1,33 @@
+/*
+-------------------------
+Navbar
+-------------------------
+*/
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+/*
+-------------------------
+Banner
+-------------------------
+*/
+
+.carousel-fade .carousel-item {
+    transition: opacity 1.5s;
+  }
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .carousel-item-next.carousel-item-right,
+.carousel-fade .carousel-item-prev.carousel-item-left {
+    opacity: 0;
+}
