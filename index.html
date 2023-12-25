@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>Livraria St. Atanásio</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -12,32 +17,39 @@
 <body>
 
     <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">Livraria Santo Atanásio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+        <ul class="navbar-nav mx-auto"> <!-- Centralizando a barra de pesquisa -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Livros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <form class="form-inline" onsubmit="return handleSearch();">
+              <div class="input-group">
+                <input id="searchInput" class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary btn-search" type="button" onclick="handleSearchIconClick()">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
           </li>
         </ul>
-      </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-shopping-basket"></i> Minha cesta</a>
+          </li>
+        </ul>
     </nav>
 
     <!-- Carousel (Banner) -->
-    <div id="carouselExample" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselBanner" class="carousel slide carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExample" data-slide-to="1"></li>
-        <li data-target="#carouselExample" data-slide-to="2"></li>
+        <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselBanner" data-slide-to="1"></li>
+        <li data-target="#carouselBanner" data-slide-to="2"></li>
         <!-- Adicione mais indicadores conforme necessário -->
       </ol>
       <div class="carousel-inner">
@@ -52,11 +64,11 @@
         </div>
         <!-- Adicione mais itens conforme necessário -->
       </div>
-      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
       </a>
@@ -92,6 +104,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- Script para iniciar o Carousel -->
