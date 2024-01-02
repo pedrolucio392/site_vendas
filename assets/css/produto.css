@@ -1,0 +1,53 @@
+
+.book-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+.book-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-details h2 {
+    color: #007bff;
+}
+
+.book-details .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.book-details .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+
+.thumbnail-btn {
+    width: 100%;
+    text-align: left;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail-btn:focus {
+    outline: none;
+}
+
+/* Adiciona um efeito de sombra suave nas miniaturas ao passar o mouse */
+.thumbnail:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mini-bloc img {
+    
+}
