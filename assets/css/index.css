@@ -161,6 +161,7 @@ Carousel Cards Promotion
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 5px;
 }
 
 .card {
@@ -298,6 +299,12 @@ Carousel Cards Best Sellers
     width: 40px; /* Ajuste o tamanho conforme necessário */
     height: 40px; /* Ajuste o tamanho conforme necessário */
 }
+
+.book-card.hovered {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
 
 /* Adicionando transição de rolagem para o carrossel */
 #carouselCardsBestSellers .carousel-fade .carousel-inner {

@@ -1,3 +1,9 @@
+/*
+-------------------------
+Book details
+-------------------------
+*/
+
 
 .book-details {
     background-color: #ffffff;
@@ -5,7 +11,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-  }
+}
   
 .book-details img {
     max-width: 100%;
@@ -14,24 +20,12 @@
 }
 
 .book-details h2 {
-    color: #007bff;
+    color: #242424;
 }
-
-.book-details .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.book-details .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-
 
 .thumbnail-btn {
-    width: 100%;
-    text-align: left;
+    width: 90px;
+    text-align: center;
 }
 
 .thumbnail {
@@ -39,11 +33,15 @@
     border-radius: 10px;
 }
 
-.thumbnail-btn:focus {
+.thumbnail:focus {
+    border-color: #242424;
+}
+
+.btn:focus {
+    box-shadow: none;
     outline: none;
 }
 
-/* Adiciona um efeito de sombra suave nas miniaturas ao passar o mouse */
 .thumbnail:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -51,4 +49,105 @@
 .mini-bloc img {
     width: 64px;
     height: 64px;
+    margin-top: 10px;
+}
+
+.mini-img {
+    margin-left: 50px;
+}
+
+#quantidade {
+    height: 60px;
+    width: 90px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-right: 40px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.border-black {
+    border: 2px solid #242424;
+}
+
+.btn-buy {
+    width: 500px;
+    background-color: #22ca00;
+    border-color: #22ca00;
+    border-radius: 5px;
+    color: #242424;
+    font-size: 20px;
+}
+
+.btn-buy:hover {
+    background-color: #81ff6d;
+    border-color: #81ff6d;
+}
+
+
+/*
+-------------------------
+Avaliações
+-------------------------
+*/
+
+#avaliacao{
+    margin-top: 50px;
+}
+
+.avaliacao-estrelas {
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ffc107;
+}
+
+#avaliacao li {
+    margin-top: 15px;
+}
+
+.avaliacao-quantidades{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card {
+    border: none; /* Remove a borda do card */
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+
+.card-title {
+    font-size: 17px; /* Tamanho da fonte do título */
+    margin-bottom: 5px; /* Espaçamento abaixo do título */
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.card-text.title-card {
+    font-size: 25px; /* Tamanho da fonte do texto */
+    margin-bottom: 5px; /* Espaçamento abaixo do texto */
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Estilização dos ícones de estrelas */
+.rating-icons {
+    color: #ffc107; /* Cor das estrelas (amarelo no padrão do Bootstrap) */
+    font-size: 25px; /* Tamanho da fonte dos ícones */
+    margin: 0;
+}
+
+.fa-user {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.text-muted {
+    font-size: 15px;
+    margin: 0;
 }

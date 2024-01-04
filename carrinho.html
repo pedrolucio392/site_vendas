@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
   <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/produto.css">
+  <link rel="stylesheet" href="assets/css/carrinho.css">
 
 </head>
 <body>
@@ -69,109 +69,77 @@
       </ul>
     </nav>
 
-    <!-- Detalhes do livro -->
-    <div class="container mt-5 book-details">
+
+    <!-- Adicione o seguinte código no corpo da página -->
+    <section id="cart-section" class="container-fluid">
+        <h2 class="mb-4">Carrinho</h2>
+        
         <div class="row">
-          <div class="col-md-4">
-            <img src="https://cdn.awsli.com.br/600x450/618/618258/produto/169051827/2717775a1d.jpg" alt="Capa do Livro" class="img-fluid main-image">
-          </div>
-          <div class="col-md-8">
-            <h2>História de Portugal: Das Origens até 1940 - João Ameal (CAPA DURA)</h2>
-            <p style="font-size: 20px; font-weight: bold; margin: 0; margin-top: 40px;">6x de 18,66</p>
-            <p style="color: rgb(112, 112, 112); font-size: 16px; margin: 0;"><s>R$ 224,00</s></p>
-            <p style="font-size: 30px; font-weight: bold; margin: 0;">R$ 112,00</p>
-            <p>ou <strong>R$ 106,40</strong> via Pix</p>
+            <div class="col-md-6">
+                <!-- Lista de itens no carrinho -->
+                <ul id="cart-items" class="list-group mb-4">
+                <!-- Cada item no carrinho terá um formato semelhante a este -->
+                    <li class="list-group-item mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    <!-- Imagem do Livro -->
+                                        <img src="https://cdn.awsli.com.br/400x400/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png" class="card-img" alt="Imagem do Livro">
+                                    </div>
+                                    <div class="col-md-8">
+                                            <!-- Nome do Livro -->
+                                            <h5 class="card-title">Tratado da Verdadeira Devoção à Santíssima Virgem (São Luís Montfort) - capa dura</h5>
+                                            <!-- Quantidade -->
+                                            <p class="card-text quantidade">Quantidade: 1</p>
+                                            <!-- Tamanho (ou qualquer outra informação adicional) -->
+                                            <p class="card-text price">R$ 46,20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="row">
-              <input type="number" id="quantidade" value="1" min="1">
-              <button class="btn btn-primary btn-buy" onclick="redirecionarParaOutraPagina()"><i class="fas fa-lock"></i> Adicionar ao Carrinho</button>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    <!-- Imagem do Livro -->
+                                        <img src="https://cdn.awsli.com.br/300x300/618/618258/produto/237907702/mockup-pbe8wtwdcf.png" class="card-img" alt="Imagem do Livro">
+                                    </div>
+                                    <div class="col-md-8">
+                                            <!-- Nome do Livro -->
+                                            <h5 class="card-title">Tratado da Verdadeira Devoção à Santíssima Virgem (São Luís Montfort) - capa dura</h5>
+                                            <!-- Quantidade -->
+                                            <p class="card-text quantidade">Quantidade: 2</p>
+                                            <!-- Tamanho (ou qualquer outra informação adicional) -->
+                                            <p class="card-text price">R$ 84,90</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-          </div>
-        </div>
-            <!-- Adicione isso abaixo do bloco de detalhes do livro -->
-        <div class="col-md-8">
-          <div class="row mini-bloc">
-              <div class="col-md-2 mini-img">
-                  <img src="https://cdn.awsli.com.br/600x450/618/618258/produto/169051827/2717775a1d.jpg" alt="Miniatura 1" class="img-thumbnail thumbnail">
-              </div>
-              <div class="col-md-2">
-                  <img src="https://cdn.awsli.com.br/600x450/618/618258/produto/169051827/8164e56bf4.jpg" alt="Miniatura 2" class="img-thumbnail thumbnail">
-              </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Avaliações -->
-    <div id="avaliacao" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar">
-            <h1>Avaliações</h1>
-            
-            <p class="avaliacao-estrelas">
-              <!-- Adicione ícones de estrela do Font Awesome conforme a classificação -->
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-    
-            <!-- Quantidade total de avaliações -->
-            <h2><span id="totalAvaliacoes">10</span> avaliações</h2>
-    
-            <ul class="avaliacao-quantidades list-unstyled">
-              <li>5 Estrelas: <span id="avaliacoes5Estrelas">9</span></li>
-              <li>4 Estrelas: <span id="avaliacoes4Estrelas">1</span></li>
-              <li>3 Estrelas: <span id="avaliacoes3Estrelas">0</span></li>
-              <li>2 Estrelas: <span id="avaliacoes2Estrelas">0</span></li>
-              <li>1 Estrela: <span id="avaliacoes1Estrela">0</span></li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="col-md-9">
-          <!-- Card 1 -->
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-user"></i>Catarina</h5>
-              <p class="card-text rating-icons">★★★★★</p>
-              <p class="card-text text-muted">Avaliado no Brasil em 3 de janeiro de 2024</p>
-              <p class="card-text title-card">Livro maravilhoso!</p>
-              <p class="card-text">De boa qualidade literária, 
-                consegue estabelecer um fluxo coeso de informações sem descuidar da estética do texto. 
-                Ameal é católico, exprimindo uma visão de mundo talhada por sua fé. O que torna o livro ainda 
-                mais interessante, considerando o papel inegável que o catolicismo tem na história de Portugal, 
-                fato muitas vezes escamoteado ou até depreciado por historiadores de outras escolas, como a marxista.</p>
+            <div id="resumoCompra" class="col-md-5">
+                <!-- Resumo da Compra -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumo da Compra</h5>
+                        <!-- Adicione aqui detalhes do resumo da compra, como total, descontos, etc. -->
+                        <div class="form-group">
+                            <label for="cupomInput">Cupom de Desconto:</label>
+                            <input type="text" class="form-control" id="cupomInput" placeholder="Digite seu cupom">
+                        </div>
+                        <p class="card-text">Subtotal: <span class="subtotal">R$ 216,00</span></p>
+                        <p class="card-text">Frete: <span>Calculado no pagamento </span></p>
+                        <hr style="border-top: 2px solid #242424;">
+                        <p class="card-text font-weight-bold">Total a Pagar: R$ 216,00</p>
+                        <button class="btn btn-primary">Finalizar Compra</button>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-user"></i>Tomás</h5>
-              <p class="card-text rating-icons">★★★★☆</p>
-              <p class="card-text text-muted">Avaliado no Brasil em 1 de janeiro de 2024</p>
-              <p class="card-text title-card">Muito bom!</p>
-              <p class="card-text">O autor discorre sobre a história de 
-                Portugal dando ênfase aos aspectos políticos com menções 
-                também das áreas econômicas e sociais ao longo dos séculos.
-                Essa abordagem torna a leitura empolgante e em diversas passagens você não 
-                consegue parar a leitura pois deseja chegar ao fim de determinado arco da história 
-                ou a conclusão do reinado em questão.
-                <br><br>
-                Outro aspecto que quero enfatizar é o fato do autor ater-se, em grade parte do texto, 
-                aos fatos importantes sem perder tempo com "fofoquinhas" sobre a corte do rei fulano e 
-                mesquinharias desse tipo. Quando assuntos de ordem pessoal são citados é porque tem conexão 
-                direta com os acontecimentos daquele momento histórico específico e ajudam a entender e contextualizar 
-                os desdobramentos e são narrados de forma sóbria e imparcial deixando os comentários por conta do leitor.</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-
+    </section>
 
 
 
@@ -253,7 +221,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/produto.js"></script>
+    <script src="assets/js/carrinho.js"></script>
     <!-- Script para iniciar o Carousel -->
   
 </body>
