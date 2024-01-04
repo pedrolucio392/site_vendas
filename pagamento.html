@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/carrinho.css">
+  <link rel="stylesheet" href="assets/css/pagamento.css">
 
 </head>
 <body>
@@ -40,7 +41,7 @@
         </ul>
         <ul class="navbar-nav ml-auto nav-icons">
           <li class="nav-item position-relative">
-            <a class="nav-link" href="carrinho.html"><i class="fas fa-shopping-basket"></i> Minha cesta<span class="cart-quantity">2</span></a>
+            <a class="nav-link" href="#"><i class="fas fa-shopping-basket"></i> Minha cesta<span class="cart-quantity">2</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-user login-icon"></i> Login</a>
@@ -72,9 +73,47 @@
 
     <!-- Adicione o seguinte código no corpo da página -->
     <section id="cart-section" class="container-fluid">
-        <h2 class="mb-4">Carrinho</h2>
+        <h2 class="mb-4">Pagamento</h2>
         
         <div class="row">
+            <div id="pagamento" class="col-md-5">
+                <!-- Resumo da Compra -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dados do cartão</h5>
+                        <!-- Adicione aqui detalhes do resumo da compra, como total, descontos, etc. -->
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <label for="nomeTitular">Nome do Titular:</label>
+                                  <input type="text" class="form-control" id="nomeTitular" placeholder="Nome Completo">
+                                </div>
+                                <div class="form-group col-md-12">
+                                  <label for="numeroCartao">Número do Cartão:</label>
+                                  <input type="text" class="form-control" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="dataValidade">Mês</label>
+                                    <input type="text" class="form-control" id="mesValidade" placeholder="MM">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="dataValidade">Ano:</label>
+                                    <input type="text" class="form-control" id="anoValidade" placeholder="AA">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="cvv">CVV:</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="XXX">
+                                </div>
+                            </div>
+
+                            <!-- Adicione outros campos necessários, como nome do titular, endereço de cobrança, etc. -->
+                            <button type="button" class="btn btn-primary" onclick="realizarPagamento()">Realizar Pagamento</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6">
                 <!-- Lista de itens no carrinho -->
                 <ul id="cart-items" class="list-group mb-4">
@@ -98,7 +137,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
@@ -119,24 +157,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-            <div id="resumoCompra" class="col-md-5">
-                <!-- Resumo da Compra -->
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Resumo da Compra</h5>
-                        <!-- Adicione aqui detalhes do resumo da compra, como total, descontos, etc. -->
-                        <div class="form-group">
-                            <label for="cupomInput">Cupom de Desconto:</label>
-                            <input type="text" class="form-control" id="cupomInput" placeholder="Digite seu cupom">
-                        </div>
-                        <p class="card-text">Subtotal: <span class="subtotal">R$ 216,00</span></p>
-                        <p class="card-text">Frete: <span>Calculado no pagamento </span></p>
-                        <hr style="border-top: 2px solid #242424;">
-                        <p class="card-text font-weight-bold">Total a Pagar: R$ 216,00</p>
-                        <button class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

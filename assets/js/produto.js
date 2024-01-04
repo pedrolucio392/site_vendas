@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
 });
 
-function redirecionarParaOutraPagina() {
+function irParaCarrinho() {
   // Substitua 'outraPagina.html' pela URL da página para a qual deseja redirecionar
   window.location.href = '../../carrinho.html';
 }
