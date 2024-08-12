@@ -4,6 +4,40 @@ Book details
 -------------------------
 */
 
+.book-details h2 {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.price-instalments {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.original-price {
+    color: rgb(112, 112, 112);
+    font-size: 24px;
+}
+
+.final-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pix-price {
+    font-weight: bold;
+}
+
+.mini-bloc {
+    margin-top: 20px;
+}
+
+.mini-img {
+    margin-left: 50px;
+    width: 64px;
+    height: 64px;
+}
 
 .book-details {
     background-color: #ffffff;
@@ -28,10 +62,6 @@ Book details
     text-align: center;
 }
 
-.thumbnail {
-    width: 100%;
-    border-radius: 10px;
-}
 
 .thumbnail:focus {
     border-color: #242424;
@@ -46,14 +76,12 @@ Book details
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.mini-bloc img {
-    width: 64px;
-    height: 64px;
-    margin-top: 10px;
-}
 
-.mini-img {
-    margin-left: 50px;
+.mini-img img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #quantidade {

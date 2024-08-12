@@ -13,7 +13,7 @@ Navbar
 
 .navbar-nav .nav-link {
     font-size: 22px;
-    color: rgba(177, 100, 0, 0.877);
+    color: #b16400e0;
 }
 
 
@@ -180,11 +180,27 @@ Carousel Cards Promotion
 }
 
 .btn-cards{
+    display: block;
+    padding: 10px;
     background-color: #242424;
     border: #242424;
+    margin-top: 20px;
 }
 
 .btn-cards:hover {
+    background-color: #666666;
+}
+
+.btn-view-more {
+    display: block;
+    padding: 10px;
+    background-color: #b16400e0;;
+    border: #242424;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-view-more:hover {
     background-color: #666666;
 }
 

@@ -1,0 +1,112 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Tratado da Verdadeira Devoção à Santíssima Virgem (São Luís Montfort) - capa dura",
+        "coverImage": "https://cdn.awsli.com.br/400x400/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "price": 46.20,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 2,
+        "title": "Vida de São Mauro (Fausto de Monte Cassino)",
+        "coverImage": "https://cdn.awsli.com.br/400x400/478/478284/produto/228201698/31-vida-sa-o-mauro---mockup-kzx6gr5lai.png",
+        "price": 23.56,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/228201698/31-vida-sa-o-mauro---mockup-kzx6gr5lai.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/228201698/31-vida-sa-o-mauro---contra-yswynjntp2.png"
+      },
+      {
+        "id": 3,
+        "title": "Autoaperfeiçoamento - Rudolf Allers (CAPA DURA)",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/226278119/photo_2023-07-24_00-18-51-y9xwrs0kae.jpg",
+        "price": 84.90,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/618/618258/produto/226278119/photo_2023-07-24_00-18-49-9fpe60jls8.jpg",
+        "miniatura2": "https://cdn.awsli.com.br/618/618258/produto/226278119/photo_2023-07-24_00-18-51-y9xwrs0kae.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Educação Sexual e Relações Humanas - Rudolf Allers (Capa Dura)",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/245429878/frente-guy6xdc36y.jpg",
+        "price": 89.90,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 5,
+        "title": "Combo Poemas - Sergio de Carvalho Pachá",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/231037583/sem-t-tulo-1-63t9qo4vum.jpg",
+        "price": 97.80,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/618/618258/produto/231037583/sem-t-tulo-1-63t9qo4vum.jpg",
+        "miniatura2": "https://cdn.awsli.com.br/618/618258/produto/231037583/mockup---hist-ria-eclesi-stica-xg79na88io.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Imitação de Cristo - Tomás de Kempis (CAPA DURA)",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/106653494/bd9233f774.jpg",
+        "price": 49.90,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 7,
+        "title": "Catecismo de São Pio X (Ilustrado e Comentado)",
+        "coverImage": "../assets/images/livro2.jpg",
+        "price": 34.99,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 8,
+        "title": "O Criador e a Criatura - as Maravilhas do Amor Divino (Pe. William Faber)",
+        "coverImage": "https://cdn.awsli.com.br/400x400/478/478284/produto/242091415/o-criador-e-a-criatura_capa-3d-para-loja-l4hk68e3nn.png",
+        "price": 124.60,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 9,
+        "title": "Combo Psicologia Tomista (8 livros)",
+        "coverImage": "../assets/images/livro1.jpg",
+        "price": 460.98,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/618/618258/produto/246616635/psicologia_tomista_combo-d76ag6hyl4.jpg",
+        "miniatura2": "https://cdn.awsli.com.br/618/618258/produto/246616635/frente--2--fyjqb92tyl-i2hk597l7s.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Santo Tomás de Aquino - João Ameal (CAPA DURA)",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/237907702/mockup-pbe8wtwdcf.png",
+        "price": 84.90,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 11,
+        "title": "História de Portugal: Das Origens até 1940 - João Ameal (CAPA DURA)",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/169051827/8164e56bf4.jpg",
+        "price": 112.00,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      },
+      {
+        "id": 12,
+        "title": "História da Companhia de Jesus (2 volumes em 1) - (CAPA DURA)",
+        "coverImage": "https://cdn.awsli.com.br/300x300/618/618258/produto/50167778/photo_2023-07-17_16-12-29-conuhgzcq7.jpg",
+        "price": 74.90,
+        "buyLink": "../../carrinho.html",
+        "miniatura1": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---mockup-6mdr3o7utv.png",
+        "miniatura2": "https://cdn.awsli.com.br/478/478284/produto/157553032/21-tratado---contra-zz9ff1x51h.png"
+      }
+    ]
+}
