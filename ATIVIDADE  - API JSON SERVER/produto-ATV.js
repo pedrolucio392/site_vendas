@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector("h2").textContent = book.title;
       document.querySelector(".price-instalments").textContent = '6x de ' + (book.price / 6).toFixed(2).replace('.', ',');
       document.querySelector(".final-price").textContent = 'R$ ' + book.price.toFixed(2).replace('.', ',');
-      document.querySelector(".pix-price").textContent = 'R$ ' + (book.price * 0.95).toFixed(2).replace('.', ','); // Supondo 5% de desconto no Pix
+      document.querySelector(".pix-price").textContent = 'R$ ' + (book.price * 0.95).toFixed(2).replace('.', ',');
       document.querySelector(".miniatura1").src = book.miniatura1;
       document.querySelector(".miniatura2").src = book.miniatura2;
     }
