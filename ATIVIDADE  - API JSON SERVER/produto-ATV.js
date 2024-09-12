@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
   // Manipula o clique nas miniaturas
   $('.thumbnail').click(function() {
